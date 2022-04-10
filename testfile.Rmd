@@ -1,0 +1,33 @@
+---
+title: "test file"
+author: "Noe"
+date: "April 9, 2022"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+# Document default
+```{r}
+print('hello world')
+print('woah')
+```
+# Show output only
+
+```{r echo=FALSE}
+print('hello world')
+print('woah')
+```
+# Show code and output
+
+```{r echo=TRUE}
+print('hello world')
+print('woah')
+```
+# Show nothing (run code)
+```{r p, include=FALSE}
+print('hello world')
+print('woah')
+```
+
